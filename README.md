@@ -1,44 +1,31 @@
-# AT de Visão Computacional para Robótica
+# Visão Computacional para Robótica
 
-Este diretório reúne os quatro exercícios, os scripts usados, os dados públicos e os resultados que podem ser conferidos. Para começar a apresentação, siga o **roteiro curto** abaixo; para detalhes técnicos, abra o relatório do exercício correspondente.
+Repositório dos exercícios de retorno da disciplina. O projeto reúne métodos clássicos e redes neurais para calibração, classificação, detecção, rastreamento e segmentação de imagens, usando OpenCV e TensorFlow/Keras.
 
-## Roteiro de apresentação
+## Conteúdo
 
-### 1. Calibração e realidade aumentada
+| Exercício | Tema | Principais resultados |
+|---|---|---|
+| 1 | Calibração de câmera e realidade aumentada | Erro de reprojeção, correção `undistort` e cubo 3D estimado com `solvePnP` e projetado com `projectPoints`. Detalhes em [EX1.md](EX1.md); imagens e métricas em `resultados/ex1/`. |
+| 2 | Classificação com OpenCV DNN e pipeline | Comparação MobileNetV2 em OpenCV DNN e Keras, além do notebook de integração. Documentação em [EX2.md](EX2.md); previsões e saídas em `resultados/ex2/`. |
+| 3 | Detecção e rastreamento | Comparação YOLOv4-tiny/SSD MobileNetV2 e associação de objetos por IoU. Documentação em [EX3.md](EX3.md); vídeos, tabelas e trilhas em `resultados/ex3/`. |
+| 4 | Segmentação semântica | Comparação DeepLabV3 e limiarização HSV em cinco cenas. Documentação em [EX4.md](EX4.md); painéis, áreas por classe e tempos em `resultados/ex4/`. |
 
-Mostre [EX1.md](EX1.md), depois `resultados/ex1/original_corrigida.jpg` e `resultados/ex1/cubo.jpg`. Explique que a calibração obteve RMS global de 0,953 px em 16 vistas e que o cubo foi projetado em vídeo com `solvePnP` e `projectPoints`. **Ressalva:** os dados vieram de uma sequência pública; não são calibração da webcam.
+O [relatório integrativo](RELATORIO_INTEGRATIVO.md) reúne o diagrama, as métricas, a análise de viabilidade embarcada, a arquitetura proposta e as lacunas previstas para a DR4. [VALIDACAO_RUBRICAS.md](VALIDACAO_RUBRICAS.md) relaciona os critérios às evidências disponíveis. As fontes e licenças dos dados estão em [DATASETS_PUBLICOS.md](DATASETS_PUBLICOS.md).
 
-### 2. OpenCV DNN e pipeline
+## Organização
 
-Mostre [EX2.md](EX2.md), as imagens anotadas em `resultados/ex2/opencv/` e `resultados/ex2/pipeline_final.jpg`. Compare a tabela OpenCV DNN/Keras e percorra o notebook [Exercicio_2_pipeline.ipynb](Exercicio_2_pipeline.ipynb). **Ressalva:** o pipeline roda e mede as etapas, mas usa parâmetros de calibração de outra câmera; portanto, não alegue correção geométrica validada nessa imagem.
+- `ex1_calibracao.py`, `ex2_classificacao.py`, `ex3_deteccao.py` e `ex4_segmentacao.py`: scripts principais.
+- `preparar_*.py` e `comum.py`: download, extração e preparação dos dados e modelos.
+- `dados/`: manifestos e, após preparação local, datasets de entrada.
+- `modelos/`: configurações, pesos e arquivos exportados dos modelos.
+- `resultados/ex1/` a `resultados/ex4/`: saídas separadas por exercício.
+- `resultados/tps/` e `resultados/cnn/`: medições e experimentos complementares dos TPs.
+- `Exercicio_2_pipeline.ipynb`: sequência interativa do pipeline integrado do Exercício 2.
 
-### 3. YOLO, SSD e rastreamento
+## Ambiente e preparação
 
-Mostre [EX3.md](EX3.md), `resultados/ex3/yolo.jpg`, `resultados/ex3/ssd.jpg` e, se houver tempo, os vídeos `yolo.avi` e `ssd.avi`. Use `comparacao.json`/`terminal.txt` para FPS, latência e métricas; `tracks.json` e `yolo.avi` mostram IDs, trilhas e contagem. **Ressalva:** a taxa de ID switches por minuto é extrapolada de um vídeo curto.
-
-### 4. Segmentação semântica
-
-Mostre [EX4.md](EX4.md), um painel `resultados/ex4/*_painel.jpg` e `resultados/ex4/areas.csv`. Compare DeepLabV3 com HSV e explique que são cinco cenas públicas. **Ressalva:** as classes VOC usadas não incluem pista/calçada e não há ground truth pareado para mIoU.
-
-### 5. Fechamento
-
-Use o [Relatório integrativo](RELATORIO_INTEGRATIVO.md) para conectar resultados, custo embarcado, proposta de arquitetura e limitações. Consulte [Validação das rubricas](VALIDACAO_RUBRICAS.md) se o professor quiser verificar cada critério. O [catálogo de datasets](DATASETS_PUBLICOS.md) registra origem e uso dos dados.
-
-## Mapa de pastas
-
-| Caminho | Conteúdo |
-|---|---|
-| `ex1_calibracao.py` … `ex4_segmentacao.py` | Scripts principais dos exercícios |
-| `preparar_*.py`, `comum.py` | Preparação de dados e funções auxiliares |
-| `dados/` | Datasets e vídeos de entrada, com proveniência quando aplicável |
-| `modelos/` | Pesos e configurações usados pelos scripts |
-| `resultados/ex1/` … `resultados/ex4/` | Saídas finais, tabelas, logs e vídeos por exercício |
-| `resultados/tps/`, `resultados/cnn/` | Evidências complementares dos TPs e do experimento CNN |
-| `requirements.txt` | Dependências Python do projeto |
-
-## Reproduzir as demonstrações
-
-O Git contém código, documentação, métricas e evidências compactas. Datasets completos, vídeos e pesos ficam fora do commit para manter o clone leve; os manifests de origem permanecem versionados. No PowerShell, a partir desta pasta, prepare o ambiente e recupere os ativos quando precisar reproduzir as execuções:
+Os datasets completos, pesos de redes, vídeos e o ambiente virtual não fazem parte do repositório para reduzir seu tamanho. Os scripts de preparação baixam os arquivos públicos necessários. No Windows, a partir desta pasta, use Python 3.11:
 
 ```powershell
 py -3.11 -m venv .venv
@@ -51,7 +38,9 @@ py -3.11 -m venv .venv
 .\.venv\Scripts\python.exe ex2_classificacao.py exportar
 ```
 
-Depois, execute os experimentos:
+## Execução
+
+Os comandos abaixo reproduzem os experimentos sem abrir janelas interativas:
 
 ```powershell
 .\.venv\Scripts\python.exe ex1_calibracao.py calibrar --pasta dados\tabuleiro_publico --padrao 9 6 --quadrado 1 --unidade quadrados --sem-janelas
@@ -61,14 +50,4 @@ Depois, execute os experimentos:
 .\.venv\Scripts\python.exe ex4_segmentacao.py --sem-janelas
 ```
 
-O notebook do Exercício 2 pode ser aberto no Jupyter com o mesmo ambiente. As demonstrações usam datasets públicos locais e alguns experimentos complementares usam dados sintéticos; não descreva esses resultados como coleta própria. A calibração e o AR são vídeos gravados, e o conjunto de resultados não é uma validação integral em tempo real na webcam.
-
-## O que abrir primeiro
-
-Se houver pouco tempo, esta é a sequência mínima de evidências:
-
-1. `resultados/ex1/original_corrigida.jpg` e `resultados/ex1/cubo.jpg`.
-2. `resultados/ex2/opencv/` e `resultados/ex2/pipeline_final.jpg`.
-3. `resultados/ex3/yolo.jpg`, `resultados/ex3/ssd.jpg` e `resultados/ex3/comparacao.json`.
-4. `resultados/ex4/mot15_tud_0044_painel.jpg` e `resultados/ex4/areas.csv`.
-5. `RELATORIO_INTEGRATIVO.md` e `VALIDACAO_RUBRICAS.md`.
+O notebook pode ser executado no mesmo ambiente. Os testes usam bases públicas e, em alguns experimentos, dados sintéticos. A calibração e a realidade aumentada foram avaliadas em vídeo público gravado; os parâmetros dessa calibração não correspondem à imagem Penn-Fudan usada no pipeline integrado. Assim, os resultados não representam uma validação completa com a webcam nem uma medição em hardware embarcado.
