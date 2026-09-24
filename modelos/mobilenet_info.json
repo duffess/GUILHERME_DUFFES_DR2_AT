@@ -1,0 +1,4 @@
+{
+  "parametros": 3538984,
+  "origem": "MobileNetV2 ImageNet, mesmos pesos exportados de Keras para ONNX"
+}

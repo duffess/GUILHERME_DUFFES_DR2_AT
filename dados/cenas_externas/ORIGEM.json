@@ -1,0 +1,34 @@
+[
+  {
+    "arquivo": "um_000032.png",
+    "dataset": "KITTI Road/Lane benchmark sample",
+    "origem": "https://csundergrad.science.uoit.ca/courses/csci3240u/latest/labs/data/kitti-samples/image_2/um_000032.png",
+    "categoria": "cena urbana externa"
+  },
+  {
+    "arquivo": "umm_000005.png",
+    "dataset": "KITTI Road/Lane benchmark sample",
+    "origem": "https://csundergrad.science.uoit.ca/courses/csci3240u/latest/labs/data/kitti-samples/image_2/umm_000005.png",
+    "categoria": "cena urbana externa"
+  },
+  {
+    "arquivo": "uu_000010.png",
+    "dataset": "KITTI Road/Lane benchmark sample",
+    "origem": "https://csundergrad.science.uoit.ca/courses/csci3240u/latest/labs/data/kitti-samples/image_2/uu_000010.png",
+    "categoria": "cena urbana externa"
+  },
+  {
+    "arquivo": "mot15_tud_0044.jpg",
+    "frame": 44,
+    "video": "dados/mot_pedestres.avi",
+    "dataset": "MOT15 TUD-Stadtmitte",
+    "categoria": "cena externa de pedestres"
+  },
+  {
+    "arquivo": "mot15_tud_0134.jpg",
+    "frame": 134,
+    "video": "dados/mot_pedestres.avi",
+    "dataset": "MOT15 TUD-Stadtmitte",
+    "categoria": "cena externa de pedestres"
+  }
+]

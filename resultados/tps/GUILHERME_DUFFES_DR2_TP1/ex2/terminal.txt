@@ -1,0 +1,6 @@
+Variância do Laplaciano
+Original:         250.97
+Sharpen manual:    3477.89
+Unsharp masking:   510.47
+
+Método com maior nitidez: Sharpen manual (variância = 3477.89)

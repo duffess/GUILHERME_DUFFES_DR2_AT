@@ -1,0 +1,29 @@
+# Ambiente local e cache do Python/Jupyter
+.venv/
+__pycache__/
+**/__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Datasets baixados e arquivos compactados; os manifestos de origem ficam versionados.
+/dados/imagenette2-160/
+/dados/PennFudanPed/
+/dados/*.zip
+/dados/*.tgz
+/dados/*.avi
+/dados/mot/img1/
+/dados/mot/central.bin
+/dados/mot/sequencia.bin
+
+# Pesos e modelos grandes são baixados/exportados pelos scripts de preparação.
+/modelos/*.weights
+/modelos/*.pb
+/modelos/*.onnx
+/modelos/*.keras
+/modelos/*.h5
+/modelos/*.pth
+/modelos/*.tar.gz
+/modelos/cenas_ex4/
+
+# Vídeos gerados; tabelas, imagens de evidência e logs continuam versionados.
+/resultados/**/*.avi

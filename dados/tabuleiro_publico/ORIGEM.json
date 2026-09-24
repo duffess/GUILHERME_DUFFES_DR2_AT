@@ -1,0 +1,27 @@
+{
+  "url": "https://github.com/smidm/video2calibration",
+  "tipo": "Vídeo REAL público; não é webcam do aluno",
+  "frames": [
+    220,
+    400,
+    520,
+    580,
+    640,
+    760,
+    1000,
+    1060,
+    1180,
+    1240,
+    1420,
+    1480,
+    1540,
+    1600,
+    1660,
+    2020
+  ],
+  "padrao": [
+    9,
+    6
+  ],
+  "escala": "Tamanho físico não informado; translação em unidades de quadrado"
+}

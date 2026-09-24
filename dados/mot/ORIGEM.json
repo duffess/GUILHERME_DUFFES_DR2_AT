@@ -1,0 +1,7 @@
+{
+  "url": "https://motchallenge.net/data/MOT15.zip",
+  "sequencia": "TUD-Stadtmitte",
+  "frames": 179,
+  "fps": 25.0,
+  "gt": "Anotação humana oficial MOT15, split train usado apenas para avaliação; detectores não treinados aqui"
+}

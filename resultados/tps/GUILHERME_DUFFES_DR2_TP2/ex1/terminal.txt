@@ -1,0 +1,4 @@
+
+--- Validação Item A: Profundidade ---
+Pixel MAIS DISTANTE (Menor disparidade): Coordenada (0, 0), Valor Normalizado = 0.0
+Pixel MAIS PRÓXIMO (Maior disparidade): Coordenada (588, 3), Valor Normalizado = 255.0

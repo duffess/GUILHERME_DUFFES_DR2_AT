@@ -1,0 +1,1 @@
+ssd foi o mais rápido neste CPU/vídeo. Candidato para menor latência; escolha embarcada exige medir recall e energia no dispositivo.

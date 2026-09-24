@@ -1,0 +1,42 @@
+[
+  {
+    "modelo": "yolo",
+    "frames": 179,
+    "latencia_ms": 64.50015363132773,
+    "fps": 15.503839040691833,
+    "parametros_treinaveis": 6056618,
+    "latencia_pipeline_ms": 72.39883072620538,
+    "fps_pipeline": 13.81237776866528,
+    "arquivo_mb": 23.127819061279297,
+    "fonte": "dados\\mot_pedestres.avi",
+    "id_switches": 11,
+    "id_switches_min": 92.17877094972067,
+    "associacoes_gt": 923,
+    "frames_anotados": 179,
+    "precisao_pessoa": 0.9871657754010695,
+    "recall_pessoa": 0.7984429065743944,
+    "tp": 923,
+    "fp": 12,
+    "fn": 233
+  },
+  {
+    "modelo": "ssd",
+    "frames": 179,
+    "latencia_ms": 62.483420111685675,
+    "fps": 16.004245577667724,
+    "parametros_treinaveis": 16837567,
+    "latencia_pipeline_ms": 67.2121279329574,
+    "fps_pipeline": 14.87826722280654,
+    "arquivo_mb": 66.4599380493164,
+    "fonte": "dados\\mot_pedestres.avi",
+    "id_switches": null,
+    "id_switches_min": null,
+    "associacoes_gt": 0,
+    "frames_anotados": 0,
+    "precisao_pessoa": 0.9887920298879203,
+    "recall_pessoa": 0.6868512110726643,
+    "tp": 794,
+    "fp": 9,
+    "fn": 362
+  }
+]

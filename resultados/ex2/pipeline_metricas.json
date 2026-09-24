@@ -1,0 +1,32 @@
+{
+  "imagem": "dados\\PennFudanPed\\PNGImages\\FudanPed00046.png",
+  "origem_imagem": "Penn-Fudan, FudanPed00046.png",
+  "calibracao": "resultados\\ex1\\calibracao.npz",
+  "calibracao_camera_correspondente": false,
+  "alerta": "Demonstração funcional: calibração de câmera pública distinta da imagem Penn-Fudan; não interpretar como undistort metrologicamente válido.",
+  "deteccoes_hog": 4,
+  "keypoints_orb": 500,
+  "top3": [
+    {
+      "classe": "abaya",
+      "confianca": 0.09491127729415894
+    },
+    {
+      "classe": "unicycle",
+      "confianca": 0.061455219984054565
+    },
+    {
+      "classe": "trench_coat",
+      "confianca": 0.05235610902309418
+    }
+  ],
+  "tempos_ms": {
+    "captura (arquivo)": 5.789699998786091,
+    "undistort": 3.7333000000217,
+    "HSV": 1.1289999984001042,
+    "ORB": 5.916099999012658,
+    "HOG + SVM": 64.59459999859973,
+    "DNN ROI": 16.692900000634836
+  },
+  "tempo_total_ms": 97.85559999545512
+}

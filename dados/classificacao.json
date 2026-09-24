@@ -1,0 +1,52 @@
+[
+  {
+    "arquivo": "imagenette2-160\\val\\n01440764\\ILSVRC2012_val_00009111.JPEG",
+    "classe": 0,
+    "synset": "n01440764"
+  },
+  {
+    "arquivo": "imagenette2-160\\val\\n02102040\\ILSVRC2012_val_00004650.JPEG",
+    "classe": 217,
+    "synset": "n02102040"
+  },
+  {
+    "arquivo": "imagenette2-160\\val\\n02979186\\ILSVRC2012_val_00008651.JPEG",
+    "classe": 482,
+    "synset": "n02979186"
+  },
+  {
+    "arquivo": "imagenette2-160\\val\\n03000684\\ILSVRC2012_val_00004262.JPEG",
+    "classe": 491,
+    "synset": "n03000684"
+  },
+  {
+    "arquivo": "imagenette2-160\\val\\n03028079\\ILSVRC2012_val_00003351.JPEG",
+    "classe": 497,
+    "synset": "n03028079"
+  },
+  {
+    "arquivo": "imagenette2-160\\val\\n03394916\\ILSVRC2012_val_00001492.JPEG",
+    "classe": 566,
+    "synset": "n03394916"
+  },
+  {
+    "arquivo": "imagenette2-160\\val\\n03417042\\ILSVRC2012_val_00002210.JPEG",
+    "classe": 569,
+    "synset": "n03417042"
+  },
+  {
+    "arquivo": "imagenette2-160\\val\\n03425413\\ILSVRC2012_val_00000732.JPEG",
+    "classe": 571,
+    "synset": "n03425413"
+  },
+  {
+    "arquivo": "imagenette2-160\\val\\n03445777\\ILSVRC2012_val_00008161.JPEG",
+    "classe": 574,
+    "synset": "n03445777"
+  },
+  {
+    "arquivo": "imagenette2-160\\val\\n03888257\\ILSVRC2012_val_00001440.JPEG",
+    "classe": 701,
+    "synset": "n03888257"
+  }
+]

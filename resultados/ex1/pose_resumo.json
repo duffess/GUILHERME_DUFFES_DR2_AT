@@ -1,0 +1,10 @@
+{
+  "frames": 100,
+  "frames_com_pose": 97,
+  "taxa_deteccao": 0.97,
+  "tempo_medio_ms": 27.819589999871823,
+  "tempo_mediano_ms": 25.38189999995666,
+  "unidade_translacao": "quadrados",
+  "origem": "ATRETORNO/dados/tabuleiro_publico.avi",
+  "inicio_frame": 160
+}

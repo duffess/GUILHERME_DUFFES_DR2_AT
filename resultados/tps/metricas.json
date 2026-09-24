@@ -1,0 +1,79 @@
+[
+  {
+    "tecnica": "HSV",
+    "ms": 1.3277400001243223,
+    "qualidade": "MAE ida/volta=0.2870; MAE canal alterado=4.9054",
+    "shape": [
+      951,
+      1268,
+      3
+    ]
+  },
+  {
+    "tecnica": "LAB",
+    "ms": 2.418539999780478,
+    "qualidade": "MAE ida/volta=0.3635; MAE canal alterado=85.2752",
+    "shape": [
+      951,
+      1268,
+      3
+    ]
+  },
+  {
+    "tecnica": "Global",
+    "ms": 0.4423599999427097,
+    "qualidade": "foreground=71.613%; contornos>200px=15; acurácia N/D sem máscara GT",
+    "shape": [
+      951,
+      1268,
+      3
+    ]
+  },
+  {
+    "tecnica": "Adaptativo",
+    "ms": 3.422179999324726,
+    "qualidade": "foreground=87.868%; contornos>200px=12; acurácia N/D sem máscara GT",
+    "shape": [
+      951,
+      1268,
+      3
+    ]
+  },
+  {
+    "tecnica": "Otsu",
+    "ms": 0.7519999999203719,
+    "qualidade": "foreground=69.558%; contornos>200px=13; acurácia N/D sem máscara GT",
+    "shape": [
+      951,
+      1268,
+      3
+    ]
+  },
+  {
+    "tecnica": "ORB",
+    "ms": 8.081720000336645,
+    "qualidade": "500 pontos; 16000 bytes de descritores; acurácia N/D",
+    "shape": [
+      720,
+      860
+    ]
+  },
+  {
+    "tecnica": "SIFT",
+    "ms": 106.56491999980062,
+    "qualidade": "3422 pontos; 1752064 bytes de descritores; acurácia N/D",
+    "shape": [
+      720,
+      860
+    ]
+  },
+  {
+    "tecnica": "AKAZE",
+    "ms": 69.0046200001234,
+    "qualidade": "2214 pontos; 135054 bytes de descritores; acurácia N/D",
+    "shape": [
+      720,
+      860
+    ]
+  }
+]

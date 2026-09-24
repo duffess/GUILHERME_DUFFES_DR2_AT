@@ -1,0 +1,7 @@
+
+Validação do Item A
+Valor do limiar otsu calculado automaticamente: 140.0
+
+Validação do Item B
+Total de contornos válidos encontrados (Área > 200 px²): 3
+Área do maior contorno detectado: 524.00 px²

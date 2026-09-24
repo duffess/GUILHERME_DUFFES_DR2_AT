@@ -1,0 +1,14 @@
+{
+  "frames_lidos": 60,
+  "shape": [
+    480,
+    640,
+    3
+  ],
+  "dtype": "uint8",
+  "frames_com_alvo": 0,
+  "latencia_media_segmentacao_ms": 1.9991599998926783,
+  "erro_x_medio": null,
+  "omega_medio": null,
+  "frames_salvos": false
+}

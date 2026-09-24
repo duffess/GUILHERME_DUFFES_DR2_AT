@@ -1,0 +1,39 @@
+{
+  "dados": "Setas sintéticas: 400 treino, 160 validação, 160 teste; seeds 1/2/3",
+  "experimentos": [
+    {
+      "modelo": "baseline",
+      "acuracia_teste": 0.91875,
+      "ms_por_imagem_em_batch": 0.4785043749961915,
+      "treino_ms": 7920.100499999535,
+      "gap_treino_validacao": 0.08749997615814209
+    },
+    {
+      "modelo": "regularizada",
+      "acuracia_teste": 0.5625,
+      "ms_por_imagem_em_batch": 0.31848375001573004,
+      "treino_ms": 3406.4150000012887,
+      "gap_treino_validacao": 0.4624999761581421
+    },
+    {
+      "modelo": "augmentation",
+      "acuracia_teste": 1.0,
+      "ms_por_imagem_em_batch": 0.2965175000099407,
+      "treino_ms": 6691.475600000558,
+      "gap_treino_validacao": 0.0
+    }
+  ],
+  "separabilidade": [
+    {
+      "features": "CNN",
+      "acuracia_linear_teste": 1.0,
+      "silhouette_pca": 0.7114080190658569
+    },
+    {
+      "features": "ORB",
+      "acuracia_linear_teste": 0.61875,
+      "silhouette_pca": -0.006075274855369093
+    }
+  ],
+  "delta_augmentation_pp": 43.75
+}

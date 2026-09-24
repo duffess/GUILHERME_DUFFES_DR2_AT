@@ -1,0 +1,5 @@
+
+--- Validação Item A: Comparativo de Descritores ---
+SIFT  -> Keypoints: 3355  | Tempo: 109.76 ms | Vetor: 128 posições
+ORB   -> Keypoints: 500   | Tempo: 1309.37 ms | Vetor: 32 posições
+AKAZE -> Keypoints: 2211  | Tempo: 68.44 ms | Vetor: 61 posições
